@@ -14,7 +14,7 @@ class Test5 extends Component {
       <>
         <h1>{this.props.text}</h1>
         <button
-          onClick={(props) => {
+          onClick={() => {
             console.log(this.props.valid);
           }}
         >

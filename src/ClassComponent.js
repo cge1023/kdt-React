@@ -1,16 +1,24 @@
 import { Component } from "react";
 
 class ClassComponent extends Component {
-  static defaultProps = {};
-  static propTypes = {};
+  state = {
+    number: 0,
+    text: "안녕",
+  };
   render() {
-    let { title, children } = this.props; // 객체 구조 분해 할당
+    let { number, text } = this.state;
     return (
       <>
-        <div>안녕?</div>
-        <div>클래스형 컴포넌트</div>
-        <div>{title}</div>
-        <div>{children}</div>
+        <div>
+          <h3>Number : {number}</h3>
+        </div>
+        <button
+          onClick={() => {
+            this.setState((prev) => ({ number: prev.number + 1 }));
+          }}
+        >
+          설정
+        </button>
       </>
     );
   }
