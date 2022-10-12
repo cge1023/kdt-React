@@ -1,17 +1,12 @@
-.wrap {
-  background-color: lightyellow;
-  text-align: center;
+input {
+  margin: 0 20px
 }
-.wrap h1 {
-  color: orange;
-  font-size: 30px;
+.headDiv{
+  border: 1px solid black;
+  padding: 10px 0;
+  text-align: left;
 }
-.wrap img {
-  width: 200px;
-  height: 300px;
-}
-.wrap div {
-  font-size: 20px;
-  font-weight: bolder;
-  margin: 10px;
+.searchArea {
+  padding: 10px 0;
+  text-align: left;
 }

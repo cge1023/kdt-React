@@ -4,6 +4,7 @@ const Event_ex = () => {
   let [list, setList] = useState([]);
   let [name, setName] = useState("");
   let [email, setEmail] = useState("");
+
   function addList() {
     let newList = list.concat({ name: name, email: email });
     setList(newList);
